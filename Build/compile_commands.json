@@ -1,0 +1,52 @@
+[
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -I\"C:/Users/wwwng/CLionProjects/Clipping program/REQUIRED\" -g -std=gnu++14 -o CMakeFiles\\Clipping_program.dir\\main.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\main.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\main.cpp"
+},
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -I\"C:/Users/wwwng/CLionProjects/Clipping program/REQUIRED\" -g -std=gnu++14 -o CMakeFiles\\Clipping_program.dir\\Window.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\Window.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\Window.cpp"
+},
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -g -std=gnu++14 -o ImGui\\src\\CMakeFiles\\ImGui.dir\\imgui.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui.cpp"
+},
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -g -std=gnu++14 -o ImGui\\src\\CMakeFiles\\ImGui.dir\\imgui_demo.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_demo.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_demo.cpp"
+},
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -g -std=gnu++14 -o ImGui\\src\\CMakeFiles\\ImGui.dir\\imgui_draw.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_draw.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_draw.cpp"
+},
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -g -std=gnu++14 -o ImGui\\src\\CMakeFiles\\ImGui.dir\\imgui_impl_glfw.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_impl_glfw.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_impl_glfw.cpp"
+},
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -g -std=gnu++14 -o ImGui\\src\\CMakeFiles\\ImGui.dir\\imgui_impl_opengl3.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_impl_opengl3.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -g -std=gnu++14 -o ImGui\\src\\CMakeFiles\\ImGui.dir\\imgui_tables.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_tables.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_tables.cpp"
+},
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -g -std=gnu++14 -o ImGui\\src\\CMakeFiles\\ImGui.dir\\imgui_widgets.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_widgets.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\ImGui\\src\\imgui_widgets.cpp"
+},
+{
+  "directory": "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I\"C:/Users/wwwng/CLionProjects/Clipping program/ImGui/inc\" -g -std=gnu++14 -o ImGui\\src\\CMakeFiles\\ImGui.dir\\__\\__\\Window.cpp.obj -c \"C:\\Users\\wwwng\\CLionProjects\\Clipping program\\Window.cpp\"",
+  "file": "C:\\Users\\wwwng\\CLionProjects\\Clipping program\\Window.cpp"
+}
+]

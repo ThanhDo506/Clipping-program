@@ -1,0 +1,13 @@
+# ninja log v5
+43	1101	6748366963985153	ImGui/src/CMakeFiles/ImGui.dir/imgui_impl_opengl3.cpp.obj	626c9ed32c974613
+33	1615	6748366969250886	ImGui/src/CMakeFiles/ImGui.dir/imgui_demo.cpp.obj	c4a15adc2d4a5b65
+47	1756	6748366970664010	ImGui/src/CMakeFiles/ImGui.dir/imgui_tables.cpp.obj	7397dd3dec2bd03
+40	1782	6748366970941085	ImGui/src/CMakeFiles/ImGui.dir/imgui_impl_glfw.cpp.obj	e57774bb5aa1c0b8
+7	1210	6748388388481620	CMakeFiles/Clipping_program.dir/main.cpp.obj	77441502d487c6e1
+18	376	6748387671544553	ImGui/src/libImGui.a	ebcab48eb238876
+23	1502	6748386562054077	CMakeFiles/Clipping_program.dir/Window.cpp.obj	2e509d28ccc4e5b3
+25	1498	6748386562054077	ImGui/src/CMakeFiles/ImGui.dir/__/__/Window.cpp.obj	b2a3ab276c019d4c
+22	1558	6748368913115484	ImGui/src/CMakeFiles/ImGui.dir/imgui_draw.cpp.obj	3fb930a5b7b6e7b9
+1210	1589	6748388392241551	Clipping_program.exe	94ddb1f90e5b5d86
+51	2671	6748366979772797	ImGui/src/CMakeFiles/ImGui.dir/imgui_widgets.cpp.obj	d6d237792796e4b9
+31	3248	6748366985497005	ImGui/src/CMakeFiles/ImGui.dir/imgui.cpp.obj	58c77d560073000d

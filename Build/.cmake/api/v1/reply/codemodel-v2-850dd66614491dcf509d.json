@@ -1,0 +1,104 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "ImGui",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-ImGui-Debug-d5a70d9ce055772475b3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ImGui"
+				},
+				{
+					"build" : "ImGui/src",
+					"jsonFile" : "directory-ImGui.src-Debug-985b23729276b9329296.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "ImGui/src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "Clipping_program",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Clipping_program::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Clipping_program-Debug-9732fa3e32378c609663.json",
+					"name" : "Clipping_program",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ImGui::@10332827b23bb075cf77",
+					"jsonFile" : "target-ImGui-Debug-b181ea163cfdf5aeb80e.json",
+					"name" : "ImGui",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/wwwng/CLionProjects/Clipping program/Build",
+		"source" : "C:/Users/wwwng/CLionProjects/Clipping program"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

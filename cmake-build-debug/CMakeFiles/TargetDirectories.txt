@@ -1,0 +1,8 @@
+C:/Users/wwwng/CLionProjects/Clipping program/cmake-build-debug/CMakeFiles/Clipping_program.dir
+C:/Users/wwwng/CLionProjects/Clipping program/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/wwwng/CLionProjects/Clipping program/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/wwwng/CLionProjects/Clipping program/cmake-build-debug/ImGui/CMakeFiles/edit_cache.dir
+C:/Users/wwwng/CLionProjects/Clipping program/cmake-build-debug/ImGui/CMakeFiles/rebuild_cache.dir
+C:/Users/wwwng/CLionProjects/Clipping program/cmake-build-debug/ImGui/src/CMakeFiles/ImGui.dir
+C:/Users/wwwng/CLionProjects/Clipping program/cmake-build-debug/ImGui/src/CMakeFiles/edit_cache.dir
+C:/Users/wwwng/CLionProjects/Clipping program/cmake-build-debug/ImGui/src/CMakeFiles/rebuild_cache.dir
