@@ -125,14 +125,6 @@ void Window::run () {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
         glEnableVertexAttribArray(0);
-        if (drawTriangle) {
-            glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer[0]);
-            glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *) 0);
-            // glDrawElements(GL_TRIANGLES, 5 * 3, GL_FLOAT, 0);
-            glEnableVertexAttribArray(1);
-            glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *) (2 * sizeof(float)));
-            glDrawArrays(GL_TRIANGLES, 0, 3);
-        }
 
         if (drawBorder) {
             glEnableVertexAttribArray(0);
@@ -187,7 +179,7 @@ void Window::run () {
 void Window::controlerImGui () {
     ImGui::Begin("Control");
     ImGui::Checkbox("Draw border", &drawBorder);
-    ImGui::Checkbox("Draw triangle", &drawTriangle);
+    // ImGui::Checkbox("Draw triangle", &drawTriangle);
     if(ImGui::ColorEdit3("Border color", (borderVerticals + 2))) {
         borderVerticals[7] = borderVerticals[12] = borderVerticals[17] = borderVerticals[2];
         borderVerticals[8] = borderVerticals[13] = borderVerticals[18] = borderVerticals[3];
@@ -236,12 +228,29 @@ void Window::controlerImGui () {
         glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer[3]);
         glBufferData(GL_ARRAY_BUFFER, sizeof (lineCohenVerticals), lineCohenVerticals, GL_STATIC_DRAW);
     }
+    if(ImGui::ColorEdit4 ("Color Cohen line",(lineCohenVerticals + 2)) ){
+        lineCohenVerticals[7] = lineCohenVerticals[2];
+        lineCohenVerticals[8] = lineCohenVerticals[3];
+        lineCohenVerticals[9] = lineCohenVerticals[4];
+        glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer[3]);
+        glBufferData(GL_ARRAY_BUFFER, sizeof (lineCohenVerticals), lineCohenVerticals, GL_STATIC_DRAW);
+    }
+    
     if(ImGui::Checkbox ("Draw Lyang clipping line", &drawLyangClippingLine)) {
         clipline (lineDrawVerticals[0], lineDrawVerticals[1], lineDrawVerticals[5], lineDrawVerticals[6],
                   borderVerticals[0], borderVerticals[1], borderVerticals[10], borderVerticals[6]);
+        
         glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer[4]);
         glBufferData(GL_ARRAY_BUFFER, sizeof (lineLyangVerticals), lineLyangVerticals, GL_STATIC_DRAW);
     }
+    if(ImGui::ColorEdit4 ("Color lyang line",(lineLyangVerticals + 2)) ){
+        lineLyangVerticals[7] = lineLyangVerticals[2];
+        lineLyangVerticals[8] = lineLyangVerticals[3];
+        lineLyangVerticals[9] = lineLyangVerticals[4];
+        glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer[4]);
+        glBufferData(GL_ARRAY_BUFFER, sizeof (lineLyangVerticals), lineLyangVerticals, GL_STATIC_DRAW);
+    }
+
     ImGui::End();
     // if (!ImGui::Begin("Settings")) {
     //     ImGui::End();
@@ -377,18 +386,21 @@ GLuint Window::LoadShaders (const char *vertex_file_path, const char *fragment_f
     return ProgramID;
 }
 
+// Tìm vùng của điểm
 int Window::computeCode (double x, double y) {
     int code = INSIDE;
- 
-    if (x < borderVerticals[0]) // to the left of rectangle
+    // borderVerticals[0] = x_min
+    if (x < borderVerticals[0]) // to the left of window
         code |= LEFT;
-    else if (x > borderVerticals[10]) // to the right of rectangle
+    // borderVerticals[10] = x_max
+    else if (x > borderVerticals[10]) // to the right of window
         code |= RIGHT;
-    if (y < borderVerticals[1]) // below the rectangle
+    // borderVerticals[1] = y_min
+    if (y < borderVerticals[1]) // below the window
         code |= BOTTOM;
-    else if (y > borderVerticals[6]) // above the rectangle
+    // borderVerticals[6] = y_max
+    else if (y > borderVerticals[6]) // above the window
         code |= TOP;
- 
     return code;
 }
 
@@ -402,7 +414,7 @@ void Window::cohenSutherlandClip (double x1, double y1, double x2, double y2,
     bool accept = false;
  
     while (true) {
-        if ((code1 == 0) && (code2 == 0)) {
+        if ((code1 == INSIDE) && (code2 == INSIDE)) {
             // Nếu cả 2 điểm nằm trong cửa sổ
             accept = true;
             break;
@@ -414,7 +426,6 @@ void Window::cohenSutherlandClip (double x1, double y1, double x2, double y2,
             // Có 1 phần nằm trong cửa sổ hiển thị
             int code_out;
             double x, y;
- 
             // Có ít nhất 1 điểm nằm ngoài cửa sổ
             if (code1 != 0)
                 code_out = code1;
@@ -445,7 +456,6 @@ void Window::cohenSutherlandClip (double x1, double y1, double x2, double y2,
                 y = y1 + (y2 - y1) * (x_min - x1) / (x2 - x1);
                 x = x_min;
             }
- 
             // Now intersection point x, y is found
             // We replace point outside rectangle
             // by intersection point
@@ -527,6 +537,7 @@ void Window::clipline(double x1, double y1, double x2, double y2, double x_min,
             dy = y2 - y1;
             if (cliptest(-dy, y1 - y_min, &u0, &u1))
                 if (cliptest(dy, y_max - y1, &u0, &u1)) {
+                    // tọa độ điiểm sau khi xén tỉa
                     if (u1 < 1.0) {
                         x2 = x1 + u1 * dx;
                         y2 = y1 + u1 * dy;
