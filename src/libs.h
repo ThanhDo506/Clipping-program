@@ -23,6 +23,9 @@
 #include "../ImGui/inc/imgui_impl_glfw.h"
 #include "../ImGui/inc/imgui_impl_opengl3.h"
 
+// #include "MagnumExternal/ImGui/imgui.h"
+// #include "MagnumExternal/ImGui/imconfig.h"
+
 /*==========NOPE==========*/
 #include <iostream>
 #include <fstream>
